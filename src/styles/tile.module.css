@@ -1,0 +1,48 @@
+.flip{
+    width: 100%;
+    aspect-ratio: 1;
+    perspective: 4000px;
+}
+
+.flip:hover{
+    cursor: pointer;
+}
+
+.card, .container, .back{
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card_active{
+    transform: rotateY(180deg);
+}
+
+.container, .back{
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    aspect-ratio: 1;
+}
+
+.container{
+    transform: rotateY(180deg);
+}
+
+.back{
+    background-image: url("/c.png");
+    border: 2px solid coral;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: cursive;
+}

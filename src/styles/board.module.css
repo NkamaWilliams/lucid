@@ -1,0 +1,25 @@
+.board{
+    margin: 30px auto;
+    max-width: 900px;
+    width: 95%;
+    background-color: black;
+    border: 6px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    column-gap: 2px;
+    row-gap: 2px;
+}
+
+@media (max-width: 900px){
+    .board{
+        grid-template-columns: repeat(6, auto);
+    }
+}
+
+@media (max-width: 500px){
+    .board{
+        grid-template-columns: repeat(4, auto);
+    }
+}
+

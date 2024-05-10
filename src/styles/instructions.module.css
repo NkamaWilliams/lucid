@@ -1,0 +1,92 @@
+.instructions{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn{
+    border: none;
+    border-radius: 10px;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 30px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.container{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(64, 64, 64, 0.53);
+}
+
+.visible{
+    visibility: visible;
+    opacity: 1;
+}
+
+.content{
+    opacity: 0;
+    position: relative;
+    top: 50px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: rgb(255, 155, 119);
+    width: 90%;
+    max-width: 500px;
+    transition: all 0.5s;
+}
+
+.fadeIn{
+    opacity: 1;
+    top: 0;
+}
+
+.close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    aspect-ratio: 1;
+    background-color: transparent;
+    border: 1px solid rgb(255, 155, 119);
+    font-size: 25px;
+}
+
+.close:hover{
+    background-color: rgb(255, 155, 119);
+    color: black;
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    font-size: 25px;
+}
+
+.text{
+    margin: 5px 0;
+}
+
+@media (max-width: 600px){
+    .btn{
+        font-size: 18px;
+    }
+}

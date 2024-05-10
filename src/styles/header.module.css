@@ -1,0 +1,48 @@
+.header{
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.logoContainer{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.logo{
+    width: 100px;
+}
+
+.scorecard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score{
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 27px;
+    height: 100%;
+    width: 90px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+@media (max-width:375px){
+    .score{
+        font-size: 24px;
+        width: 60px;
+        padding: 6px;
+    }
+
+    .logo{
+        width: 60px;
+    }
+}
